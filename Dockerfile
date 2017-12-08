@@ -29,8 +29,8 @@ RUN wget -O- https://raw.githubusercontent.com/aliyun-node/tnvm/master/install.s
 RUN source $HOME/.bashrc \
     && tnvm install "alinode-v$ALINODE_VERSION" \
     && tnvm use "alinode-v$ALINODE_VERSION" \
-    && npm install -g node-gyp bower grunt-cli canvas@1.6.2 gulp-cli cordova-hot-code-push-cli pm2 agentx commandx --registry=https://registry.npm.taobao.org \
     && npm config set registry https://registry.npm.taobao.org --global \
+    && npm install --unsafe-perm -g node-gyp bower grunt-cli canvas@1.6.2 gulp-cli cordova-hot-code-push-cli pm2 agentx commandx --registry=https://registry.npm.taobao.org \
 	&& mkdir -p /root \
 	&& chmod 755 /docker-entrypoint.sh
 
