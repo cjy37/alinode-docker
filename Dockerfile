@@ -10,9 +10,9 @@ RUN yum install -y \
 	   tcl-devel libpng-devel libjpeg-devel ghostscript ghostscript-devel bzip2-devel libtiff libtiff-devel libjpeg libjpeg-turbo \
 	   ImageMagick ImageMagick-devel GraphicsMagick GraphicsMagick-devel libjpeg-turbo-devel libpng gnupg \
 	   pango pango-devel pangomm pangomm-devel giflib giflib-devel openssl-devel libstdc++ \
-	   libxproto librenderproto libkbproto libxextproto freetype freetype-devel fontconfig-devel \
-	   bison flex gperf libicu-devel libc-devel libx11-devel libxext-devel libpaxctl \
-	   git build-base libnodejs-devel gcc perl python ruby sqlite-devel linux-headers make \
+	   libXproto libRenderproto libKbproto libXextproto freetype freetype-devel fontconfig-devel \
+	   bison flex gperf libicu-devel glibc-devel libX11-devel libXext-devel libPaxctl \
+	   git build-base libNodejs-devel gcc perl python ruby sqlite-devel linux-headers make \
 	   && mkdir -p /root
     
 ## Change mirrors
