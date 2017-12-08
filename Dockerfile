@@ -6,7 +6,7 @@ COPY docker-entrypoint.sh /
 COPY agentx.default.js $HOME/
 
 RUN yum install -y \
-	   wget curl g++ cairo cairo-devel cairomm cairomm-devel pixman pixman-devel binutils-gold \
+	   wget curl libstdc++-devel gcc-c++ cairo cairo-devel cairomm cairomm-devel pixman pixman-devel binutils-gold \
 	   jpeg jpeg-devel libjpeg libjpeg-turbo libjpeg-turbo-devel libpng gnupg \
 	   imagemagick-devel graphicsmagick-devel imagemagick graphicsmagick \
 	   pango pango-devel pangomm pangomm-devel giflib giflib-devel openssl-devel libstdc++ \
