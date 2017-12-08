@@ -7,12 +7,12 @@ COPY agentx.default.js $HOME/
 
 RUN yum install -y \
 	   wget curl libstdc++-devel gcc-c++ cairo cairo-devel cairomm cairomm-devel pixman pixman-devel binutils-gold \
-	   jpeg jpeg-devel libjpeg libjpeg-turbo libjpeg-turbo-devel libpng gnupg \
-	   imagemagick-devel graphicsmagick-devel imagemagick graphicsmagick \
+	   tcl-devel libpng-devel libjpeg-devel ghostscript-devel bzip2-devel freetype-devel libtiff-devel libjpeg libjpeg-turbo libjpeg-turbo-devel libpng gnupg \
+	   libimagemagick-devel libgraphicsmagick-devel libimagemagick libgraphicsmagick \
 	   pango pango-devel pangomm pangomm-devel giflib giflib-devel openssl-devel libstdc++ \
-	   xproto renderproto kbproto xextproto freetype freetype-devel fontconfig-devel \
-	   bison flex gperf icu-devel libc-devel libpng-devel libx11-devel libxext-devel paxctl \
-	   git build-base nodejs-devel gcc perl python ruby sqlite-devel linux-headers make \
+	   libxproto librenderproto libkbproto libxextproto freetype freetype-devel fontconfig-devel \
+	   bison flex gperf libicu-devel liblibc-devel libpng-devel liblibx11-devel liblibxext-devel libpaxctl \
+	   git build-base libnodejs-devel gcc perl python ruby sqlite-devel linux-headers make \
 	   && mkdir -p /root
     
 # Change mirrors
